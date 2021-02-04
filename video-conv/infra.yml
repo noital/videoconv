@@ -1,0 +1,20 @@
+Parameters:
+  BucketName:
+    Type: string
+    
+  BackendEndpoint:
+    Type: string
+
+Resources:
+Type: AWS::S3::Bucket
+Properties: 
+  AccessControl: PublicRead
+  BucketName: !Ref BucketName
+  WebsiteConfiguration: 
+    IndexDocument: index.html
+    RoutingRules: 
+    - RoutingRule:
+        RoutingRuleCondition:
+          KeyPrefixEquals: convert
+        RedirectRule:
+          HostName: !Ref BackendEndpoint

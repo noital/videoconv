@@ -1,0 +1,14 @@
+[
+    {
+        "ParameterKey": "EnvironmentName",
+        "ParameterValue": "VideoConv"
+    },
+    {
+        "ParameterKey": "ClusterRole",
+        "ParameterValue": "arn:aws:iam::224951027987:role/EksClusterRole"
+    },
+        {
+        "ParameterKey": "NodeRole",
+        "ParameterValue": "arn:aws:iam::224951027987:role/aws-service-role/eks-nodegroup.amazonaws.com/AWSServiceRoleForAmazonEKSNodegroup"
+    }
+]
