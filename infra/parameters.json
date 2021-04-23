@@ -9,6 +9,6 @@
     },
         {
         "ParameterKey": "NodeRole",
-        "ParameterValue": "arn:aws:iam::224951027987:role/aws-service-role/eks-nodegroup.amazonaws.com/AWSServiceRoleForAmazonEKSNodegroup"
+        "ParameterValue": "arn:aws:iam::224951027987:role/eksNodeGroupRole"
     }
 ]

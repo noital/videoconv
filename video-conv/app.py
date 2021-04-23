@@ -10,7 +10,7 @@ import os
 app = Flask(__name__)
 LOG = create_logger(app)
 LOG.setLevel(logging.INFO)
-bucketName = os.environ['BUCKET']
+bucketName = os.environ['DEST_BUCKET']
 #bucketUrl = boto3.client('s3').get_bucket(Bucket=bucketName)
 LOG.info(f'bucketName: {bucketName}')
 #LOG.info(f'bucketUrl: {bucketUrl}')
